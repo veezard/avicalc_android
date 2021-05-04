@@ -1,0 +1,197 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALTIMETER_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTIMETER_ADD_BUTTON= 213;$/;"	f	class:JniInterfacingConstants
+ALTIMETER_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTIMETER_ASSIGN_BUTTON= 113;$/;"	f	class:JniInterfacingConstants
+ALTIMETER_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTIMETER_BUTTON= 53;$/;"	f	class:JniInterfacingConstants
+ALTIMETER_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTIMETER_UPDATE_NUMBER= 9;$/;"	f	class:JniInterfacingConstants
+ALTITUDE_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTITUDE_ADD_BUTTON= 212;$/;"	f	class:JniInterfacingConstants
+ALTITUDE_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTITUDE_ASSIGN_BUTTON= 112;$/;"	f	class:JniInterfacingConstants
+ALTITUDE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTITUDE_BUTTON= 52;$/;"	f	class:JniInterfacingConstants
+ALTITUDE_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ALTITUDE_UPDATE_NUMBER= 8;$/;"	f	class:JniInterfacingConstants
+ANS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ANS_BUTTON= 30;$/;"	f	class:JniInterfacingConstants
+ANS_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ANS_UPDATE_NUMBER=2;$/;"	f	class:JniInterfacingConstants
+APPLICATION_ID	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^  public static final String APPLICATION_ID = "com.veezard.avicalc";$/;"	f	class:BuildConfig
+APPLICATION_ID	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^  public static final String APPLICATION_ID = "com.veezard.avicalc";$/;"	f	class:BuildConfig
+APP_BASE_NAME	gradlew.bat	/^set APP_BASE_NAME=%~n0$/;"	v
+APP_HOME	gradlew.bat	/^set APP_HOME=%DIRNAME%$/;"	v
+ARCCOS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ARCCOS_BUTTON= 25;$/;"	f	class:JniInterfacingConstants
+ARCSIN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ARCSIN_BUTTON= 24;$/;"	f	class:JniInterfacingConstants
+ARCTAN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ARCTAN_BUTTON= 26;$/;"	f	class:JniInterfacingConstants
+A_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int A_ADD_BUTTON= 201;$/;"	f	class:JniInterfacingConstants
+A_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int A_ASSIGN_BUTTON= 101;$/;"	f	class:JniInterfacingConstants
+A_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int A_BUTTON= 41;$/;"	f	class:JniInterfacingConstants
+A_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int A_UPDATE_NUMBER= 3;$/;"	f	class:JniInterfacingConstants
+BACKSPACE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int BACKSPACE_BUTTON= 1001;$/;"	f	class:JniInterfacingConstants
+BUILD_TYPE	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^  public static final String BUILD_TYPE = "debug";$/;"	f	class:BuildConfig
+BUILD_TYPE	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^  public static final String BUILD_TYPE = "release";$/;"	f	class:BuildConfig
+B_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int B_ADD_BUTTON= 202;$/;"	f	class:JniInterfacingConstants
+B_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int B_ASSIGN_BUTTON= 102;$/;"	f	class:JniInterfacingConstants
+B_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int B_BUTTON= 42;$/;"	f	class:JniInterfacingConstants
+B_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int B_UPDATE_NUMBER= 4;$/;"	f	class:JniInterfacingConstants
+BuildConfig	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^public final class BuildConfig {$/;"	c
+BuildConfig	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^public final class BuildConfig {$/;"	c
+CLASSPATH	gradlew.bat	/^set CLASSPATH=%APP_HOME%\\gradle\\wrapper\\gradle-wrapper.jar$/;"	v
+CLEAR_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int CLEAR_BUTTON= 1002;$/;"	f	class:JniInterfacingConstants
+CMD_LINE_ARGS	gradlew.bat	/^set CMD_LINE_ARGS=$/;"	v
+CMD_LINE_ARGS	gradlew.bat	/^set CMD_LINE_ARGS=%*$/;"	v
+COS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int COS_BUTTON= 22;$/;"	f	class:JniInterfacingConstants
+CROSS_WIND_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int CROSS_WIND_BUTTON= 64;$/;"	f	class:JniInterfacingConstants
+CROSS_WIND_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int CROSS_WIND_UPDATE_NUMBER= 17;$/;"	f	class:JniInterfacingConstants
+C_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int C_ADD_BUTTON= 203;$/;"	f	class:JniInterfacingConstants
+C_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int C_ASSIGN_BUTTON= 103;$/;"	f	class:JniInterfacingConstants
+C_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int C_BUTTON= 43;$/;"	f	class:JniInterfacingConstants
+C_TO_F_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int C_TO_F_BUTTON= 313;$/;"	f	class:JniInterfacingConstants
+C_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int C_UPDATE_NUMBER= 5;$/;"	f	class:JniInterfacingConstants
+DEBUG	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^  public static final boolean DEBUG = Boolean.parseBoolean("true");$/;"	f	class:BuildConfig
+DEBUG	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^  public static final boolean DEBUG = false;$/;"	f	class:BuildConfig
+DEFAULT_JVM_OPTS	gradlew.bat	/^set DEFAULT_JVM_OPTS=$/;"	v
+DENSITY_ALTITUDE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int DENSITY_ALTITUDE_BUTTON= 62;$/;"	f	class:JniInterfacingConstants
+DENSITY_ALTITUDE_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int DENSITY_ALTITUDE_UPDATE_NUMBER= 15;$/;"	f	class:JniInterfacingConstants
+DEVIATION_ANGLE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int DEVIATION_ANGLE_BUTTON= 65;$/;"	f	class:JniInterfacingConstants
+DEVIATION_ANGLE_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int DEVIATION_ANGLE_UPDATE_NUMBER= 18;$/;"	f	class:JniInterfacingConstants
+DIRNAME	gradlew.bat	/^if "%DIRNAME%" == "" set DIRNAME=.$/;"	v
+DIRNAME	gradlew.bat	/^set DIRNAME=%~dp0$/;"	v
+DIVIDE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int DIVIDE_BUTTON= 14;$/;"	f	class:JniInterfacingConstants
+D_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int D_ADD_BUTTON= 204;$/;"	f	class:JniInterfacingConstants
+D_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int D_ASSIGN_BUTTON= 104;$/;"	f	class:JniInterfacingConstants
+D_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int D_BUTTON= 44;$/;"	f	class:JniInterfacingConstants
+D_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int D_UPDATE_NUMBER= 6;$/;"	f	class:JniInterfacingConstants
+EIGHT_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int EIGHT_BUTTON= 8;$/;"	f	class:JniInterfacingConstants
+ENTRY_FIELD_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ENTRY_FIELD_UPDATE_NUMBER=0;$/;"	f	class:JniInterfacingConstants
+EQUALS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int EQUALS_BUTTON= 1000;$/;"	f	class:JniInterfacingConstants
+ExampleInstrumentedTest	app/src/androidTest/java/com/veezard/avicalc/ExampleInstrumentedTest.java	/^public class ExampleInstrumentedTest {$/;"	c
+ExampleUnitTest	app/src/test/java/com/veezard/avicalc/ExampleUnitTest.java	/^public class ExampleUnitTest {$/;"	c
+FEET_TO_NM_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int FEET_TO_NM_BUTTON= 302;$/;"	f	class:JniInterfacingConstants
+FIVE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int FIVE_BUTTON= 5;$/;"	f	class:JniInterfacingConstants
+FOUR_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int FOUR_BUTTON= 4;$/;"	f	class:JniInterfacingConstants
+FPM_TO_KNOTS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int FPM_TO_KNOTS_BUTTON= 304;$/;"	f	class:JniInterfacingConstants
+F_TO_C_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int F_TO_C_BUTTON= 314;$/;"	f	class:JniInterfacingConstants
+GALLONS_TO_AVIGAS_LBS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int GALLONS_TO_AVIGAS_LBS_BUTTON= 319;$/;"	f	class:JniInterfacingConstants
+GALLONS_TO_JET_FUEL_LBS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int GALLONS_TO_JET_FUEL_LBS_BUTTON= 320;$/;"	f	class:JniInterfacingConstants
+GALLONS_TO_LITTERS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int GALLONS_TO_LITTERS_BUTTON= 318;$/;"	f	class:JniInterfacingConstants
+GROUND_SPEED_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int GROUND_SPEED_BUTTON= 67;$/;"	f	class:JniInterfacingConstants
+GROUND_SPEED_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int GROUND_SPEED_UPDATE_NUMBER= 20;$/;"	f	class:JniInterfacingConstants
+GuiHelpers	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^public class GuiHelpers {$/;"	c
+HEADING_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEADING_ADD_BUTTON= 216;$/;"	f	class:JniInterfacingConstants
+HEADING_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEADING_ASSIGN_BUTTON= 116;$/;"	f	class:JniInterfacingConstants
+HEADING_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEADING_BUTTON= 56;$/;"	f	class:JniInterfacingConstants
+HEADING_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEADING_UPDATE_NUMBER= 12;$/;"	f	class:JniInterfacingConstants
+HEAD_WIND_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEAD_WIND_BUTTON= 63;$/;"	f	class:JniInterfacingConstants
+HEAD_WIND_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEAD_WIND_UPDATE_NUMBER= 16;$/;"	f	class:JniInterfacingConstants
+HECTOPASCALS_TO_INHG_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HECTOPASCALS_TO_INHG_BUTTON= 322;$/;"	f	class:JniInterfacingConstants
+INDICATED_AIRSPEED_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int INDICATED_AIRSPEED_ADD_BUTTON= 217;$/;"	f	class:JniInterfacingConstants
+INDICATED_AIRSPEED_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int INDICATED_AIRSPEED_ASSIGN_BUTTON= 117;$/;"	f	class:JniInterfacingConstants
+INDICATED_AIRSPEED_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int INDICATED_AIRSPEED_BUTTON= 57;$/;"	f	class:JniInterfacingConstants
+INDICATED_AIRSPEED_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int INDICATED_AIRSPEED_UPDATE_NUMBER= 13;$/;"	f	class:JniInterfacingConstants
+INHG_TO_HECTOPASCALS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int INHG_TO_HECTOPASCALS_BUTTON= 321;$/;"	f	class:JniInterfacingConstants
+JAVA_EXE	gradlew.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
+JAVA_EXE	gradlew.bat	/^set JAVA_EXE=java.exe$/;"	v
+JAVA_HOME	gradlew.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
+JniInterfacingConstants	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^public class JniInterfacingConstants{$/;"	c
+KGS_TO_LBS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int KGS_TO_LBS_BUTTON = 316;$/;"	f	class:JniInterfacingConstants
+KILOMETERS_TO_MILES_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int KILOMETERS_TO_MILES_BUTTON= 310;$/;"	f	class:JniInterfacingConstants
+KNOTS_TO_FPM_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int KNOTS_TO_FPM_BUTTON= 303;$/;"	f	class:JniInterfacingConstants
+KNOTS_TO_MPH_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int KNOTS_TO_MPH_BUTTON= 311;$/;"	f	class:JniInterfacingConstants
+KPH_TO_MPM_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int KPH_TO_MPM_BUTTON= 305;$/;"	f	class:JniInterfacingConstants
+LBS_TO_KGS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int LBS_TO_KGS_BUTTON= 315;$/;"	f	class:JniInterfacingConstants
+LEFT_PARENTH_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int LEFT_PARENTH_BUTTON= 15;$/;"	f	class:JniInterfacingConstants
+LITERS_TO_GALLONS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int LITERS_TO_GALLONS_BUTTON= 317;$/;"	f	class:JniInterfacingConstants
+MILES_TO_KILOMETERS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int MILES_TO_KILOMETERS_BUTTON= 309;$/;"	f	class:JniInterfacingConstants
+MILES_TO_NM_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int MILES_TO_NM_BUTTON= 308;$/;"	f	class:JniInterfacingConstants
+MINUS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int MINUS_BUTTON= 12;$/;"	f	class:JniInterfacingConstants
+MPH_TO_KNOTS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int MPH_TO_KNOTS_BUTTON= 312;$/;"	f	class:JniInterfacingConstants
+MPM_TO_KPH_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int MPM_TO_KPH_BUTTON= 306;$/;"	f	class:JniInterfacingConstants
+MULTIPLY_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int MULTIPLY_BUTTON= 13;$/;"	f	class:JniInterfacingConstants
+MainActivity	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^public class MainActivity extends AppCompatActivity {$/;"	c
+NINE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int NINE_BUTTON= 9;$/;"	f	class:JniInterfacingConstants
+NM_TO_FEET_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int NM_TO_FEET_BUTTON= 301;$/;"	f	class:JniInterfacingConstants
+NM_TO_MILES_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int NM_TO_MILES_BUTTON= 307;$/;"	f	class:JniInterfacingConstants
+ONE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ONE_BUTTON= 1;$/;"	f	class:JniInterfacingConstants
+PERIOD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int PERIOD_BUTTON= 10;$/;"	f	class:JniInterfacingConstants
+PLUS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int PLUS_BUTTON= 11;$/;"	f	class:JniInterfacingConstants
+PRESSURE_ALTITUDE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int PRESSURE_ALTITUDE_BUTTON= 61;$/;"	f	class:JniInterfacingConstants
+PRESSURE_ALTITUDE_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int PRESSURE_ALTITUDE_UPDATE_NUMBER= 14;$/;"	f	class:JniInterfacingConstants
+PREVIOUS_ENTRY_FIELD_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int PREVIOUS_ENTRY_FIELD_UPDATE_NUMBER=1;$/;"	f	class:JniInterfacingConstants
+RIGHT_PARENTH_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int RIGHT_PARENTH_BUTTON= 16;$/;"	f	class:JniInterfacingConstants
+RustGlue	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^public class RustGlue {$/;"	c
+SEVEN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int SEVEN_BUTTON= 7;$/;"	f	class:JniInterfacingConstants
+SIN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int SIN_BUTTON= 21;$/;"	f	class:JniInterfacingConstants
+SIX_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int SIX_BUTTON= 6;$/;"	f	class:JniInterfacingConstants
+TAN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TAN_BUTTON= 23;$/;"	f	class:JniInterfacingConstants
+TEMP_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TEMP_ADD_BUTTON= 211;$/;"	f	class:JniInterfacingConstants
+TEMP_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TEMP_ASSIGN_BUTTON= 111;$/;"	f	class:JniInterfacingConstants
+TEMP_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TEMP_BUTTON= 51;$/;"	f	class:JniInterfacingConstants
+TEMP_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TEMP_UPDATE_NUMBER=7 ;$/;"	f	class:JniInterfacingConstants
+THREE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int THREE_BUTTON= 3;$/;"	f	class:JniInterfacingConstants
+TRUE_AIRSPEED_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TRUE_AIRSPEED_BUTTON= 66;$/;"	f	class:JniInterfacingConstants
+TRUE_AIRSPEED_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TRUE_AIRSPEED_UPDATE_NUMBER= 19;$/;"	f	class:JniInterfacingConstants
+TWO_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TWO_BUTTON= 2;$/;"	f	class:JniInterfacingConstants
+VERSION_CODE	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^  public static final int VERSION_CODE = 1;$/;"	f	class:BuildConfig
+VERSION_CODE	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^  public static final int VERSION_CODE = 1;$/;"	f	class:BuildConfig
+VERSION_NAME	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^  public static final String VERSION_NAME = "1.0";$/;"	f	class:BuildConfig
+VERSION_NAME	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^  public static final String VERSION_NAME = "1.0";$/;"	f	class:BuildConfig
+WIND_HEADING_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_HEADING_ADD_BUTTON= 215;$/;"	f	class:JniInterfacingConstants
+WIND_HEADING_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_HEADING_ASSIGN_BUTTON= 115;$/;"	f	class:JniInterfacingConstants
+WIND_HEADING_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_HEADING_BUTTON= 55;$/;"	f	class:JniInterfacingConstants
+WIND_HEADING_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_HEADING_UPDATE_NUMBER= 11;$/;"	f	class:JniInterfacingConstants
+WIND_SPEED_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_SPEED_ADD_BUTTON= 214;$/;"	f	class:JniInterfacingConstants
+WIND_SPEED_ASSIGN_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_SPEED_ASSIGN_BUTTON= 114;$/;"	f	class:JniInterfacingConstants
+WIND_SPEED_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_SPEED_BUTTON= 54;$/;"	f	class:JniInterfacingConstants
+WIND_SPEED_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int WIND_SPEED_UPDATE_NUMBER= 10;$/;"	f	class:JniInterfacingConstants
+ZERO_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int ZERO_BUTTON= 0;$/;"	f	class:JniInterfacingConstants
+_SKIP	gradlew.bat	/^set _SKIP=2$/;"	v
+addButtonId	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static int addButtonId;$/;"	f	class:JniInterfacingConstants
+addButtonPressed	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^    boolean addButtonPressed = false;$/;"	f	class:MainActivity
+addPressedAndroidButtonIdToRustButtonNumber	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static BiMap<Integer,Integer> addPressedAndroidButtonIdToRustButtonNumber;$/;"	f	class:JniInterfacingConstants
+addition_isCorrect	app/src/test/java/com/veezard/avicalc/ExampleUnitTest.java	/^    public void addition_isCorrect() {$/;"	m	class:ExampleUnitTest
+androidButtonIdToRustButtonNumber	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static BiMap<Integer,Integer> androidButtonIdToRustButtonNumber;$/;"	f	class:JniInterfacingConstants
+args	build/linker-wrapper/linker-wrapper.py	/^args = [os.environ['RUST_ANDROID_GRADLE_CC'], os.environ['RUST_ANDROID_GRADLE_CC_LINK_ARG']] + sys.argv[1:]$/;"	v
+assignButtonId	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static int assignButtonId;$/;"	f	class:JniInterfacingConstants
+assignButtonPressed	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^    boolean assignButtonPressed = false;$/;"	f	class:MainActivity
+assignButtonsAdjustView	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    public static void assignButtonsAdjustView(MainActivity mainActivity){$/;"	m	class:GuiHelpers
+assignPressedAndroidButtonIdToRustButtonNumber	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static BiMap<Integer,Integer> assignPressedAndroidButtonIdToRustButtonNumber;$/;"	f	class:JniInterfacingConstants
+assignableButtons	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    static Set<Integer> assignableButtons;$/;"	f	class:GuiHelpers
+com.veezard.avicalc	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^package com.veezard.avicalc;$/;"	p
+com.veezard.avicalc	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^package com.veezard.avicalc;$/;"	p
+com.veezard.avicalc	app/src/androidTest/java/com/veezard/avicalc/ExampleInstrumentedTest.java	/^package com.veezard.avicalc;$/;"	p
+com.veezard.avicalc	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^package com.veezard.avicalc;$/;"	p
+com.veezard.avicalc	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^package com.veezard.avicalc;$/;"	p
+com.veezard.avicalc	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^package com.veezard.avicalc;$/;"	p
+com.veezard.avicalc	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^package com.veezard.avicalc;$/;"	p
+com.veezard.avicalc	app/src/test/java/com/veezard/avicalc/ExampleUnitTest.java	/^package com.veezard.avicalc;$/;"	p
+convButtonId	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static int convButtonId;$/;"	f	class:JniInterfacingConstants
+convButtonPressed	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^    boolean convButtonPressed = false;$/;"	f	class:MainActivity
+convPressedAndroidButtonIdToRustButtonNumber	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static BiMap<Integer,Integer> convPressedAndroidButtonIdToRustButtonNumber;$/;"	f	class:JniInterfacingConstants
+conversionLabels	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    static Map<Integer, String> conversionLabels;$/;"	f	class:GuiHelpers
+die	gradlew	/^die () {$/;"	f
+draw_conv_symbols	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    public static void draw_conv_symbols(MainActivity mainActivity){$/;"	m	class:GuiHelpers
+draw_standard_symbols	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    public static void draw_standard_symbols(MainActivity mainActivity){$/;"	m	class:GuiHelpers
+end	gradlew.bat	/^:end$/;"	l
+execute	gradlew.bat	/^:execute$/;"	l
+fail	gradlew.bat	/^:fail$/;"	l
+findJavaFromJavaHome	gradlew.bat	/^:findJavaFromJavaHome$/;"	l
+hideid	app/build/reports/lint-results-release-fatal.html	/^function hideid(id) {$/;"	f
+init	gradlew.bat	/^:init$/;"	l
+initialize	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    public static void initialize() {$/;"	m	class:GuiHelpers
+initialize	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static void initialize(){$/;"	m	class:JniInterfacingConstants
+initialize	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^    public static void initialize(MainActivity mainActivity){$/;"	m	class:RustGlue
+initializeRust	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^    private static native void initializeRust();$/;"	m	class:RustGlue	file:
+mainActivity	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^    private static MainActivity mainActivity;$/;"	f	class:RustGlue	file:
+mainEnd	gradlew.bat	/^:mainEnd$/;"	l
+omega	gradlew.bat	/^:omega$/;"	l
+onCreate	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^    protected void onCreate(Bundle savedInstanceState) {$/;"	m	class:MainActivity
+printable_cmd	build/linker-wrapper/linker-wrapper.py	/^printable_cmd = ' '.join(pipes.quote(arg) for arg in args)$/;"	v
+respondToButton	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^    public void respondToButton(View view) {$/;"	m	class:MainActivity
+respondToButtonRust	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^    public static native void respondToButtonRust(int button_number);$/;"	m	class:RustGlue
+reveal	app/build/reports/lint-results-release-fatal.html	/^function reveal(id) {$/;"	f
+save	gradlew	/^save () {$/;"	f
+standardLabels	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    static Map<Integer, String> standardLabels;$/;"	f	class:GuiHelpers
+update_field	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^    public static void update_field(int field, String val){$/;"	m	class:RustGlue
+useAppContext	app/src/androidTest/java/com/veezard/avicalc/ExampleInstrumentedTest.java	/^    public void useAppContext() {$/;"	m	class:ExampleInstrumentedTest
+warn	gradlew	/^warn () {$/;"	f
+win9xME_args	gradlew.bat	/^:win9xME_args$/;"	l
+win9xME_args_slurp	gradlew.bat	/^:win9xME_args_slurp$/;"	l

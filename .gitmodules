@@ -1,0 +1,3 @@
+[submodule "app/src/main/rust/android_glue/avicalc_backend"]
+	path = app/src/main/rust/android_glue/avicalc_backend
+	url = https://github.com/veezard/avicalc_backend

@@ -1,0 +1,24 @@
+[package]
+name = "android_glue"
+version = "0.1.0"
+authors = ["Veezard <me@veezard.pro>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[target.'cfg(target_os="android")'.dependencies]
+jni = { version = "0.5", default-features = false }
+
+[lib]
+crate-type = ["dylib"]
+
+
+[dependencies]
+strum = "0.20"
+strum_macros = "0.20"
+float-pretty-print ="*"
+
+[dependencies.avicalc_backend]
+path = "avicalc_backend"
+
+
