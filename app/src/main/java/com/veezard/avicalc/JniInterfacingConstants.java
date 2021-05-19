@@ -26,13 +26,13 @@ public class JniInterfacingConstants{
 
         //Toggle buttons
 
-        assignButtonId = R.id.but_24;
-        addButtonId = R.id.but_14;
+        assignButtonId = R.id.but_34;
+        addButtonId = R.id.but_24;
         convButtonId = R.id.but_94;
 
 
         //Buttons without modifiers
-        androidButtonIdToRustButtonNumber.put(R.id.but_00, DEVIATION_ANGLE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_00, COURSE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_01, HEAD_WIND_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_02, CROSS_WIND_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_03, WIND_HEADING_BUTTON);
@@ -41,6 +41,7 @@ public class JniInterfacingConstants{
         androidButtonIdToRustButtonNumber.put(R.id.but_11, ALTITUDE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_12, ALTIMETER_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_13, TEMP_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_14, DEW_POINT_BUTTON);
 
         androidButtonIdToRustButtonNumber.put(R.id.but_20, HEADING_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_21, A_BUTTON);
@@ -51,7 +52,6 @@ public class JniInterfacingConstants{
         androidButtonIdToRustButtonNumber.put(R.id.but_31, ARCSIN_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_32, ARCCOS_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_33, ARCTAN_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_34, CLEAR_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_40, DENSITY_ALTITUDE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_41, SIN_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_42, COS_BUTTON);
@@ -68,6 +68,7 @@ public class JniInterfacingConstants{
         androidButtonIdToRustButtonNumber.put(R.id.but_63, SIX_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_64, MINUS_BUTTON);
 
+        androidButtonIdToRustButtonNumber.put(R.id.but_70, CLEAR_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_71, ONE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_72, TWO_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_73, THREE_BUTTON);
@@ -90,6 +91,7 @@ public class JniInterfacingConstants{
         assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_11, ALTITUDE_ASSIGN_BUTTON);
         assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_12, ALTIMETER_ASSIGN_BUTTON);
         assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_13, TEMP_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_14, DEW_POINT_ASSIGN_BUTTON);
         assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_20, HEADING_ASSIGN_BUTTON);
         assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_21, A_ASSIGN_BUTTON);
         assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_22, B_ASSIGN_BUTTON);
@@ -103,6 +105,7 @@ public class JniInterfacingConstants{
         addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_11, ALTITUDE_ADD_BUTTON);
         addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_12, ALTIMETER_ADD_BUTTON);
         addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_13, TEMP_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_14, DEW_POINT_ADD_BUTTON);
         addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_20, HEADING_ADD_BUTTON);
         addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_21, A_ADD_BUTTON);
         addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_22, B_ADD_BUTTON);
@@ -157,9 +160,10 @@ public class JniInterfacingConstants{
     public static final int DENSITY_ALTITUDE_UPDATE_NUMBER= 15;
     public static final int HEAD_WIND_UPDATE_NUMBER= 16;
     public static final int CROSS_WIND_UPDATE_NUMBER= 17;
-    public static final int DEVIATION_ANGLE_UPDATE_NUMBER= 18;
+    public static final int COURSE_UPDATE_NUMBER= 18;
     public static final int TRUE_AIRSPEED_UPDATE_NUMBER= 19;
     public static final int GROUND_SPEED_UPDATE_NUMBER= 20;
+    public static final int DEWPOINT_UPDATE_NUMBER= 21;
 
     // These constants must be the same as constants in the const module of the rust library
     public static final int EQUALS_BUTTON= 1000;
@@ -200,11 +204,12 @@ public class JniInterfacingConstants{
     public static final int WIND_HEADING_BUTTON= 55;
     public static final int HEADING_BUTTON= 56;
     public static final int INDICATED_AIRSPEED_BUTTON= 57;
+    public static final int DEW_POINT_BUTTON = 58;
     public static final int PRESSURE_ALTITUDE_BUTTON= 61;
     public static final int DENSITY_ALTITUDE_BUTTON= 62;
     public static final int HEAD_WIND_BUTTON= 63;
     public static final int CROSS_WIND_BUTTON= 64;
-    public static final int DEVIATION_ANGLE_BUTTON= 65;
+    public static final int COURSE_BUTTON= 65;
     public static final int TRUE_AIRSPEED_BUTTON= 66;
     public static final int GROUND_SPEED_BUTTON= 67;
     public static final int A_ASSIGN_BUTTON= 101;
@@ -218,6 +223,7 @@ public class JniInterfacingConstants{
     public static final int WIND_HEADING_ASSIGN_BUTTON= 115;
     public static final int HEADING_ASSIGN_BUTTON= 116;
     public static final int INDICATED_AIRSPEED_ASSIGN_BUTTON= 117;
+    public static final int DEW_POINT_ASSIGN_BUTTON = 118;
     public static final int A_ADD_BUTTON= 201;
     public static final int B_ADD_BUTTON= 202;
     public static final int C_ADD_BUTTON= 203;
@@ -229,6 +235,7 @@ public class JniInterfacingConstants{
     public static final int WIND_HEADING_ADD_BUTTON= 215;
     public static final int HEADING_ADD_BUTTON= 216;
     public static final int INDICATED_AIRSPEED_ADD_BUTTON= 217;
+    public static final int DEW_POINT_ADD_BUTTON = 218;
     public static final int NM_TO_FEET_BUTTON= 301;
     public static final int FEET_TO_NM_BUTTON= 302;
     public static final int KNOTS_TO_FPM_BUTTON= 303;

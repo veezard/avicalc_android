@@ -6,395 +6,641 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/outer_background"
+        android:padding="0dp">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/entry_field"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="1+2*28+cos11"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="28sp" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/entry_field_background"
+                android:radius="350dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/prev_entry_field"
-                        android:layout_width="247dp"
-                        android:layout_height="40dp"
-                        android:text="sin43"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textSize="28sp" />
-
-                    <TextView
-                        android:id="@+id/answer_field"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:text="143.4365"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textSize="28sp" />
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/entry_field"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:text="1+2*28+cos11"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textSize="28dp" />
+
+
+                        <View android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/lower_background"/>
+                        <TextView
+                            android:id="@+id/answer_field"
+                            android:layout_width="match_parent"
+                            android:layout_weight="3"
+                            android:layout_height="40dp"
+                            android:text="143.4365"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textSize="28dp" />
+
+                    </LinearLayout>
+                    <View android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lower_background"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/prev_entry_field"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="20dp"
+                            android:text="1+2*28+cos11"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textSize="14dp" />
+
+                        <View android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/lower_background"/>
+
+                        <TextView
+                            android:id="@+id/last_operation"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_weight="3"
+                            android:text="mpm -> kph"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/label_on_light"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
+            </FrameLayout>
 
-
-            </LinearLayout>
-        </FrameLayout>
-
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TableRow
+            <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/lower_part_background">
 
-                <Button
-                    android:id="@+id/but_00"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="DEV\nANG\n8" />
+                <TableRow
+                    style="@style/LabelRowStyle">
 
-                <Button
-                    android:id="@+id/but_01"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="HD\nWND\n35" />
+                    <TextView
+                        android:id="@+id/lab_00"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_02"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="CRS\nWND\n15" />
+                    <TextView
+                        android:id="@+id/lab_01"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_03"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="WND\nDIR\n43" />
+                    <TextView
+                        android:id="@+id/lab_02"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_04"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="WND\nSPD\n15" />
-            </TableRow>
+                    <TextView
+                        android:id="@+id/lab_03"
+                        style="@style/ButtonLabelStyle" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/lab_04"
+                        style="@style/ButtonLabelStyle" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/but_10"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="IAS\n135" />
+                <TableRow style="@style/ButtonRowStyle">
 
-                <Button
-                    android:id="@+id/but_11"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="ALT\n15000" />
+                    <Button
+                        android:id="@+id/but_00"
+                        style="@style/ButtonStyle"
+                        android:text="HDG\n8" />
 
-                <Button
-                    android:id="@+id/but_12"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="PRES\n29.92" />
+                    <Button
+                        android:id="@+id/but_01"
+                        style="@style/ButtonStyle"
+                        android:text="HD\nWND\n35" />
 
-                <Button
-                    android:id="@+id/but_13"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="TEMP\n20" />
+                    <Button
+                        android:id="@+id/but_02"
+                        style="@style/ButtonStyle"
+                        android:text="CRS\nWND\n15" />
 
-                <Button
-                    android:id="@+id/but_14"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="+=" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/but_03"
+                        style="@style/ButtonStyle"
+                        android:text="PRES\nALT\n10000" />
 
-                <Button
-                    android:id="@+id/but_20"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="HDG\n45"                />
-                <Button
-                    android:id="@+id/but_21"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="a"                />
+                    <Button
+                        android:id="@+id/but_04"
+                        style="@style/ButtonStyle"
+                        android:text="DENS\nALT\n11000" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/but_22"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="b" />
-                <Button
-                    android:id="@+id/but_23"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="c"                />
-                <Button
-                    android:id="@+id/but_24"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text=":="                />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TableRow
+                    style="@style/LabelRowStyle">
 
-                <Button
-                    android:id="@+id/but_30"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="PRES\nALT\n16000"                />
-                <Button
-                    android:id="@+id/but_31"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="asin"                />
+                    <TextView
+                        android:id="@+id/lab_10"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_32"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="acos" />
-                <Button
-                    android:id="@+id/but_33"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="atan"                />
-                <Button
-                    android:id="@+id/but_34"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="CLR"                />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/lab_11"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_40"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="DENS\nALT\n1700"                />
+                    <TextView
+                        android:id="@+id/lab_12"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_41"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="sin" />
+                    <TextView
+                        android:id="@+id/lab_13"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_42"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="cos" />
-                <Button
-                    android:id="@+id/but_43"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="tan"                />
+                    <TextView
+                        android:id="@+id/lab_14"
+                        style="@style/ButtonLabelStyle" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
 
-                <Button
-                    android:id="@+id/but_44"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="/" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/but_10"
+                        style="@style/ButtonStyle"
+                        android:text="GS\n60" />
 
-                <Button
-                    android:id="@+id/but_50"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="TAS\n145"                />
+                    <Button
+                        android:id="@+id/but_11"
+                        style="@style/ButtonStyle"
+                        android:text="WND\nSPD\n15" />
 
-                <Button
-                    android:id="@+id/but_51"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="7" />
+                    <Button
+                        android:id="@+id/but_12"
+                        style="@style/ButtonStyle"
+                        android:text="WND\nDIR\n134" />
 
-                <Button
-                    android:id="@+id/but_52"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="8" />
+                    <Button
+                        android:id="@+id/but_13"
+                        style="@style/ButtonStyle"
+                        android:text="ALT\n9000" />
 
-                <Button
-                    android:id="@+id/but_53"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="9" />
+                    <Button
+                        android:id="@+id/but_14"
+                        style="@style/ButtonStyle"
+                        android:text="PRES\n29.92" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/but_54"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="x" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TableRow
+                    style="@style/LabelRowStyle">
 
-                <Button
-                    android:id="@+id/but_60"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="GSPD\n130"                />
+                    <TextView
+                        android:id="@+id/lab_20"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_61"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="4" />
+                    <TextView
+                        android:id="@+id/lab_21"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_62"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="5" />
+                    <TextView
+                        android:id="@+id/lab_22"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_63"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="6" />
+                    <TextView
+                        android:id="@+id/lab_23"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_64"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="-" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/lab_24"
+                        style="@style/ButtonLabelStyle" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
 
-                <Button
-                    android:id="@+id/but_70"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text=""                />
+                    <Button
+                        android:id="@+id/but_20"
+                        style="@style/ButtonStyle"
+                        android:text="TAS\n45" />
 
-                <Button
-                    android:id="@+id/but_71"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="1" />
+                    <Button
+                        android:id="@+id/but_21"
+                        style="@style/ButtonStyle"
+                        android:text="CAS\n65" />
 
-                <Button
-                    android:id="@+id/but_72"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="2" />
+                    <Button
+                        android:id="@+id/but_22"
+                        style="@style/ButtonStyle"
+                        android:text="CRS\n13" />
 
-                <Button
-                    android:id="@+id/but_73"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="3" />
+                    <Button
+                        android:id="@+id/but_23"
+                        style="@style/ButtonStyle"
+                        android:text="TMP\n15" />
 
-                <Button
-                    android:id="@+id/but_74"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="+" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/but_24"
+                        style="@style/ButtonStyle"
+                        android:text="DWPT\n10" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/but_80"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="" />
+                <TableRow
+                    style="@style/LabelRowStyle">
 
-                <Button
-                    android:id="@+id/but_81"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="0" />
+                    <TextView
+                        android:id="@+id/lab_30"
+                        style="@style/ButtonLabelStyle" />
 
-                <Button
-                    android:id="@+id/but_82"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="." />
+                    <TextView
+                        android:id="@+id/lab_31"
+                        style="@style/ButtonLabelStyle"
+                        android:text="nm -> ft" />
 
-                <Button
-                    android:id="@+id/but_83"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="ANS" />
+                    <TextView
+                        android:id="@+id/lab_32"
+                        style="@style/ButtonLabelStyle"
+                        android:text="ft -> nm" />
 
-                <Button
-                    android:id="@+id/but_84"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="=" />
-            </TableRow>
+                    <TextView
+                        android:id="@+id/lab_33"
+                        style="@style/ButtonLabelStyle"
+                        android:text="ft -> m" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/lab_34"
+                        style="@style/ButtonLabelStyle" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
 
-                <Button
-                    android:id="@+id/but_90"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="" />
+                    <Button
+                        android:id="@+id/but_30"
+                        style="@style/ButtonOneSymbol"
+                        android:text="+=" />
 
-                <Button
-                    android:id="@+id/but_91"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="(" />
+                    <Button
+                        android:id="@+id/but_31"
+                        style="@style/ButtonOneLiner"
+                        android:text="asin" />
 
-                <Button
-                    android:id="@+id/but_92"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text=")" />
+                    <Button
+                        android:id="@+id/but_32"
+                        style="@style/ButtonOneLiner"
+                        android:text="acos" />
 
-                <Button
-                    android:id="@+id/but_93"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="\u003c" />
+                    <Button
+                        android:id="@+id/but_33"
+                        style="@style/ButtonOneLiner"
+                        android:text="atan" />
 
-                <Button
-                    android:id="@+id/but_94"
-                    style="@style/ButtonStyle"
-                    android:onClick="respondToButton"
-                    android:text="CONV" />
-            </TableRow>
-        </TableLayout>
+                    <Button
+                        android:id="@+id/but_34"
+                        style="@style/ButtonOneSymbol"
+                        android:text=":=" />
+                </TableRow>
 
-    </LinearLayout>
+                <TableRow
+                    style="@style/LabelRowStyle">
+
+                    <TextView
+                        android:id="@+id/lab_40"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_41"
+                        style="@style/ButtonLabelStyle"
+                        android:text="kn -> fpm" />
+
+                    <TextView
+                        android:id="@+id/lab_42"
+                        style="@style/ButtonLabelStyle"
+                        android:text="fpm -> kn" />
+
+                    <TextView
+                        android:id="@+id/lab_43"
+                        style="@style/ButtonLabelStyle"
+                        android:text="m->ft" />
+
+                    <TextView
+                        android:id="@+id/lab_44"
+                        style="@style/ButtonLabelStyle" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
+
+                    <Button
+                        android:id="@+id/but_40"
+                        style="@style/ButtonStyle"
+                        android:text="a\n10" />
+
+                    <Button
+                        android:id="@+id/but_41"
+                        style="@style/ButtonOneLiner"
+                        android:text="sin" />
+
+                    <Button
+                        android:id="@+id/but_42"
+                        style="@style/ButtonOneLiner"
+                        android:text="cos" />
+
+                    <Button
+                        android:id="@+id/but_43"
+                        style="@style/ButtonOneLiner"
+                        android:text="tan" />
+
+                    <Button
+                        android:id="@+id/but_44"
+                        style="@style/ButtonOneLiner"
+                        android:text="CONV" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/LabelRowStyle">
+
+                    <TextView
+                        android:id="@+id/lab_50"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_51"
+                        style="@style/ButtonLabelStyle"
+                        android:text="nm -> ml" />
+
+                    <TextView
+                        android:id="@+id/lab_52"
+                        style="@style/ButtonLabelStyle"
+                        android:text="ml -> nm" />
+
+                    <TextView
+                        android:id="@+id/lab_53"
+                        style="@style/ButtonLabelStyle"
+                        android:text="kph -> mpm" />
+
+                    <TextView
+                        android:id="@+id/lab_54"
+                        style="@style/ButtonLabelStyle"
+                        android:text="mpm -> kph" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
+
+                    <Button
+                        android:id="@+id/but_50"
+                        style="@style/ButtonStyle"
+                        android:text="b\n20" />
+
+                    <Button
+                        android:id="@+id/but_51"
+                        style="@style/ButtonOneSymbol"
+                        android:text="7" />
+
+                    <Button
+                        android:id="@+id/but_52"
+                        style="@style/ButtonOneSymbol"
+                        android:text="8" />
+
+                    <Button
+                        android:id="@+id/but_53"
+                        style="@style/ButtonOneSymbol"
+                        android:text="9" />
+
+                    <Button
+                        android:id="@+id/but_54"
+                        style="@style/ButtonOneSymbol"
+                        android:text="\u00D7" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/LabelRowStyle">
+
+                    <TextView
+                        android:id="@+id/lab_60"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_61"
+                        style="@style/ButtonLabelStyle"
+                        android:text="kn -> mph" />
+
+                    <TextView
+                        android:id="@+id/lab_62"
+                        style="@style/ButtonLabelStyle"
+                        android:text="mph -> kn" />
+
+                    <TextView
+                        android:id="@+id/lab_63"
+                        style="@style/ButtonLabelStyle"
+                        android:text="C -> F" />
+
+                    <TextView
+                        android:id="@+id/lab_64"
+                        style="@style/ButtonLabelStyle"
+                        android:text="F -> C" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
+
+                    <Button
+                        android:id="@+id/but_60"
+                        style="@style/ButtonStyle"
+                        android:text="c\n31" />
+
+                    <Button
+                        android:id="@+id/but_61"
+                        style="@style/ButtonOneSymbol"
+                        android:text="4" />
+
+                    <Button
+                        android:id="@+id/but_62"
+                        style="@style/ButtonOneSymbol"
+                        android:text="5" />
+
+                    <Button
+                        android:id="@+id/but_63"
+                        style="@style/ButtonOneSymbol"
+                        android:text="6" />
+
+                    <Button
+                        android:id="@+id/but_64"
+                        style="@style/ButtonOneSymbol"
+                        android:text="\u00f7" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/LabelRowStyle">
+
+                    <TextView
+                        android:id="@+id/lab_70"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_71"
+                        style="@style/ButtonLabelStyle"
+                        android:text="lb -> kg" />
+
+                    <TextView
+                        android:id="@+id/lab_72"
+                        style="@style/ButtonLabelStyle"
+                        android:text="kg -> lb" />
+
+                    <TextView
+                        android:id="@+id/lab_73"
+                        style="@style/ButtonLabelStyle"
+                        android:text="lt -> gl" />
+
+                    <TextView
+                        android:id="@+id/lab_74"
+                        style="@style/ButtonLabelStyle"
+                        android:text="gl -> lt" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
+
+                    <Button
+                        android:id="@+id/but_70"
+                        style="@style/ButtonStyle"
+                        android:text="d\n11" />
+
+                    <Button
+                        android:id="@+id/but_71"
+                        style="@style/ButtonOneSymbol"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/but_72"
+                        style="@style/ButtonOneSymbol"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/but_73"
+                        style="@style/ButtonOneSymbol"
+                        android:text="3" />
+
+                    <Button
+                        android:id="@+id/but_74"
+                        style="@style/ButtonOneSymbol"
+                        android:text="+" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/LabelRowStyle">
+
+                    <TextView
+                        android:id="@+id/lab_80"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_81"
+                        style="@style/ButtonLabelStyle"
+                        android:text="inHg -> hp" />
+
+                    <TextView
+                        android:id="@+id/lab_82"
+                        style="@style/ButtonLabelStyle"
+                        android:text="hp -> inHg" />
+
+                    <TextView
+                        android:id="@+id/lab_83"
+                        style="@style/ButtonLabelStyle"
+                        android:text="gl -> lbsAV" />
+
+                    <TextView
+                        android:id="@+id/lab_84"
+                        style="@style/ButtonLabelStyle"
+                        android:text="gl -> lbsJF" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
+
+                    <Button
+                        android:id="@+id/but_80"
+                        style="@style/ButtonOneLiner"
+                        android:text="CLR" />
+
+                    <Button
+                        android:id="@+id/but_81"
+                        style="@style/ButtonOneSymbol"
+                        android:text="." />
+
+                    <Button
+                        android:id="@+id/but_82"
+                        style="@style/ButtonOneSymbol"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/but_83"
+                        style="@style/ButtonOneSymbol"
+                        android:text="=" />
+
+                    <Button
+                        android:id="@+id/but_84"
+                        style="@style/ButtonOneSymbol"
+                        android:text="-" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/LabelRowStyle">
+
+                    <TextView
+                        android:id="@+id/lab_90"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_91"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_92"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_93"
+                        style="@style/ButtonLabelStyle" />
+
+                    <TextView
+                        android:id="@+id/lab_94"
+                        style="@style/ButtonLabelStyle" />
+                </TableRow>
+                <TableRow style="@style/ButtonRowStyle">
+
+                    <Button
+                        android:id="@+id/but_90"
+                        style="@style/ButtonOneLiner"
+                        android:text="\?" />
+
+                    <Button
+                        android:id="@+id/but_91"
+                        style="@style/ButtonOneSymbol"
+                        android:text="\u003c" />
+
+                    <Button
+                        android:id="@+id/but_92"
+                        style="@style/ButtonOneSymbol"
+                        android:text="(" />
+
+                    <Button
+                        android:id="@+id/but_93"
+                        style="@style/ButtonOneSymbol"
+                        android:text=")" />
+
+                    <Button
+                        android:id="@+id/but_94"
+                        style="@style/ButtonOneLiner"
+                        android:text="ANS" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="5dp" />
+            </TableLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

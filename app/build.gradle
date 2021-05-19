@@ -28,7 +28,11 @@ android {
     }
 
     ndkVersion "22.1.7171670"
-
+    tasks.whenTaskAdded { task ->
+        if ((task.name == 'javaPreCompileDebug' || task.name == 'javaPreCompileRelease')) {
+            task.dependsOn 'cargoBuild'
+        }
+    }
 }
 
 apply plugin: "org.mozilla.rust-android-gradle.rust-android"

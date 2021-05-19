@@ -7,4 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#7E1B1B</color>
+    <color name="blue">#5079C4</color>
+    <color name="outer_background">#0E0D0D</color>
+    <color name="lower_background">#3B3D47</color>
+    <color name="entry_background">#C5CDE3</color>
+    <color name="button">#48220E</color>
+    <color name="conv_button">#A3760B</color>
+    <color name="conv_button_pressed">#EBB025</color>
+    <color name="assignable_button">#2D7677</color>
+    <color name="variable_button">#5C7D93</color>
+    <color name="assign_button_pressed">#44B0B1</color>
+    <color name="label">#BFD92B</color>
+    <color name="label_on_light">#5B4D02</color>
+
 </resources>

@@ -22,6 +22,7 @@ const CROSS_WIND_UPDATE_NUMBER: i32 = 17;
 const DEVIATION_ANGLE_UPDATE_NUMBER: i32 = 18;
 const TRUE_AIRSPEED_UPDATE_NUMBER: i32 = 19;
 const GROUND_SPEED_UPDATE_NUMBER: i32 = 20;
+const DEWPOINT_UPDATE_NUMBER: i32 = 21;
 
 fn float_to_pretty_string(number: f64) -> String {
     if number.is_nan() {
@@ -115,6 +116,7 @@ pub mod android {
                 }
                 Variable::Tas => update_callback_function_wrapper(TRUE_AIRSPEED_UPDATE_NUMBER),
                 Variable::GrdSpd => update_callback_function_wrapper(GROUND_SPEED_UPDATE_NUMBER),
+                Variable::DewPoint => update_callback_function_wrapper(DEWPOINT_UPDATE_NUMBER),
                 _ => Rc::new(RefCell::new(Box::new(|_| {}))),
             }
         }

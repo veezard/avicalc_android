@@ -92,6 +92,7 @@ public class GuiHelpers {
         assignableButtons.add(WIND_HEADING_BUTTON);
         assignableButtons.add(HEADING_BUTTON);
         assignableButtons.add(INDICATED_AIRSPEED_BUTTON);
+        assignableButtons.add(DEW_POINT_BUTTON);
 
     }
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -119,13 +120,9 @@ public class GuiHelpers {
         TextView buttonView;
 
         for (int conversionButton : conversionLabels.keySet()) {
-
             buttonView=mainActivity.findViewById(convPressedAndroidButtonIdToRustButtonNumber.inverse().get(conversionButton));
             buttonView.setText(conversionLabels.get(conversionButton));
-
         }
-
-
     }
     public static void draw_standard_symbols(MainActivity mainActivity){
 

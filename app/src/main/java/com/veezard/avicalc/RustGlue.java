@@ -124,6 +124,11 @@ public class RustGlue {
                 textView = RustGlue.mainActivity.findViewById(buttonId);
                 textView.setText("GSPD\n" + val);
                 break;
+            case DEWPOINT_UPDATE_NUMBER:
+                buttonId=androidButtonIdToRustButtonNumber.inverse().get(DEW_POINT_BUTTON);
+                textView = RustGlue.mainActivity.findViewById(buttonId);
+                textView.setText("DWPT\n" + val);
+                break;
             default:
                 return;
 
