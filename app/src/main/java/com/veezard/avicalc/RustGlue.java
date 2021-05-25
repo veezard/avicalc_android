@@ -54,6 +54,11 @@ public class RustGlue {
                 textView = RustGlue.mainActivity.findViewById(buttonId);
                 textView.setText("c\n" + val);
                 break;
+            case D_UPDATE_NUMBER:
+                buttonId=androidButtonIdToRustButtonNumber.inverse().get(D_BUTTON);
+                textView = RustGlue.mainActivity.findViewById(buttonId);
+                textView.setText("d\n" + val);
+                break;
             case TEMP_UPDATE_NUMBER:
                 buttonId=androidButtonIdToRustButtonNumber.inverse().get(TEMP_BUTTON);
                 textView = RustGlue.mainActivity.findViewById(buttonId);
@@ -84,10 +89,10 @@ public class RustGlue {
                 textView = RustGlue.mainActivity.findViewById(buttonId);
                 textView.setText("HDG\n" + val);
                 break;
-            case INDICATED_AIRSPEED_UPDATE_NUMBER:
-                buttonId=androidButtonIdToRustButtonNumber.inverse().get(INDICATED_AIRSPEED_BUTTON);
+            case CALIBRATED_AIRSPEED_UPDATE_NUMBER:
+                buttonId=androidButtonIdToRustButtonNumber.inverse().get(CALIBRATED_AIRSPEED_BUTTON);
                 textView = RustGlue.mainActivity.findViewById(buttonId);
-                textView.setText("IAS\n" + val);
+                textView.setText("CAS\n" + val);
                 break;
             case PRESSURE_ALTITUDE_UPDATE_NUMBER:
                 buttonId=androidButtonIdToRustButtonNumber.inverse().get(PRESSURE_ALTITUDE_BUTTON);
@@ -109,10 +114,10 @@ public class RustGlue {
                 textView = RustGlue.mainActivity.findViewById(buttonId);
                 textView.setText("CRS\nWND\n" + val);
                 break;
-            case DEVIATION_ANGLE_UPDATE_NUMBER:
-                buttonId=androidButtonIdToRustButtonNumber.inverse().get(DEVIATION_ANGLE_BUTTON);
+            case COURSE_UPDATE_NUMBER:
+                buttonId=androidButtonIdToRustButtonNumber.inverse().get(COURSE_BUTTON);
                 textView = RustGlue.mainActivity.findViewById(buttonId);
-                textView.setText("DEV\nANG\n" + val);
+                textView.setText("CRS\n" + val);
                 break;
             case TRUE_AIRSPEED_UPDATE_NUMBER:
                 buttonId=androidButtonIdToRustButtonNumber.inverse().get(TRUE_AIRSPEED_BUTTON);

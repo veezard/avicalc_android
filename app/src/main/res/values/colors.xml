@@ -12,13 +12,21 @@
     <color name="outer_background">#0E0D0D</color>
     <color name="lower_background">#3B3D47</color>
     <color name="entry_background">#C5CDE3</color>
-    <color name="button">#48220E</color>
-    <color name="conv_button">#A3760B</color>
-    <color name="conv_button_pressed">#EBB025</color>
-    <color name="assignable_button">#2D7677</color>
-    <color name="variable_button">#5C7D93</color>
-    <color name="assign_button_pressed">#44B0B1</color>
     <color name="label">#BFD92B</color>
     <color name="label_on_light">#5B4D02</color>
 
+    <color name="button">#48220E</color>
+    <color name="conv_button">#A3760B</color>
+    <color name="conv_button_pressed">#EBB025</color>
+    <color name="assignable_variable_button">#F8334A2F</color>
+    <color name="calculated_variable_button">#2F1D32</color>
+    <color name="assign_button">#162E4A</color>
+    <color name="assign_button_pressed">#194C89</color>
+    <color name="help_button">#930707</color>
+    <color name="help_button_pressed">#E02727</color>
+
+    <color name="help_window_background">#C7AEE7</color>
+    <color name="help_window_title">#000000</color>
+    <color name="help_window_text">#000000</color>
+    <color name="help_close_button">#D05A5A</color>
 </resources>

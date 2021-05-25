@@ -14,12 +14,12 @@ const ALTIMETER_UPDATE_NUMBER: i32 = 9;
 const WIND_SPEED_UPDATE_NUMBER: i32 = 10;
 const WIND_HEADING_UPDATE_NUMBER: i32 = 11;
 const HEADING_UPDATE_NUMBER: i32 = 12;
-const INDICATED_AIRSPEED_UPDATE_NUMBER: i32 = 13;
+const CALIBRATED_AIRSPEED_UPDATE_NUMBER: i32 = 13;
 const PRESSURE_ALTITUDE_UPDATE_NUMBER: i32 = 14;
 const DENSITY_ALTITUDE_UPDATE_NUMBER: i32 = 15;
 const HEAD_WIND_UPDATE_NUMBER: i32 = 16;
 const CROSS_WIND_UPDATE_NUMBER: i32 = 17;
-const DEVIATION_ANGLE_UPDATE_NUMBER: i32 = 18;
+const COURSE_UPDATE_NUMBER: i32 = 18;
 const TRUE_AIRSPEED_UPDATE_NUMBER: i32 = 19;
 const GROUND_SPEED_UPDATE_NUMBER: i32 = 20;
 const DEWPOINT_UPDATE_NUMBER: i32 = 21;
@@ -42,14 +42,12 @@ fn float_to_pretty_string(number: f64) -> String {
 pub mod android {
 
     extern crate jni;
-
     use self::jni::objects::{JClass, JMethodID, JObject, JString, JValue};
     use self::jni::sys::jint;
     use self::jni::sys::jobject;
     use self::jni::sys::jobjectArray;
     use self::jni::sys::jstring;
     use self::jni::JNIEnv;
-    use std::cell::Cell;
     use std::cell::RefCell;
 
     use std::rc::Rc;
@@ -102,7 +100,9 @@ pub mod android {
                 Variable::WindSpeed => update_callback_function_wrapper(WIND_SPEED_UPDATE_NUMBER),
                 Variable::WindDir => update_callback_function_wrapper(WIND_HEADING_UPDATE_NUMBER),
                 Variable::Heading => update_callback_function_wrapper(HEADING_UPDATE_NUMBER),
-                Variable::Ias => update_callback_function_wrapper(INDICATED_AIRSPEED_UPDATE_NUMBER),
+                Variable::Cas => {
+                    update_callback_function_wrapper(CALIBRATED_AIRSPEED_UPDATE_NUMBER)
+                }
                 Variable::PressAlt => {
                     update_callback_function_wrapper(PRESSURE_ALTITUDE_UPDATE_NUMBER)
                 }
@@ -111,9 +111,7 @@ pub mod android {
                 }
                 Variable::HeadWind => update_callback_function_wrapper(HEAD_WIND_UPDATE_NUMBER),
                 Variable::CrossWind => update_callback_function_wrapper(CROSS_WIND_UPDATE_NUMBER),
-                Variable::DevAngl => {
-                    update_callback_function_wrapper(DEVIATION_ANGLE_UPDATE_NUMBER)
-                }
+                Variable::Course => update_callback_function_wrapper(COURSE_UPDATE_NUMBER),
                 Variable::Tas => update_callback_function_wrapper(TRUE_AIRSPEED_UPDATE_NUMBER),
                 Variable::GrdSpd => update_callback_function_wrapper(GROUND_SPEED_UPDATE_NUMBER),
                 Variable::DewPoint => update_callback_function_wrapper(DEWPOINT_UPDATE_NUMBER),

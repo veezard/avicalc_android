@@ -17,6 +17,7 @@ crate-type = ["dylib"]
 strum = "0.20"
 strum_macros = "0.20"
 float-pretty-print ="*"
+jni = { version = "0.5", default-features = false }
 
 [dependencies.avicalc_backend]
 path = "avicalc_backend"

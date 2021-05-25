@@ -4,16 +4,22 @@ package com.veezard.avicalc;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class JniInterfacingConstants{
 
     public static BiMap<Integer,Integer> androidButtonIdToRustButtonNumber;
     public static BiMap<Integer,Integer> assignPressedAndroidButtonIdToRustButtonNumber;
     public static BiMap<Integer,Integer> addPressedAndroidButtonIdToRustButtonNumber;
     public static BiMap<Integer,Integer> convPressedAndroidButtonIdToRustButtonNumber;
+    public static Set<Integer> assignableButtonIds;
+    public static Set<Integer> calculatedButtonIds;
 
     public static int assignButtonId;
     public static int addButtonId;
     public static int convButtonId;
+    public static int helpButtonId;
 
 
 
@@ -24,119 +30,150 @@ public class JniInterfacingConstants{
         addPressedAndroidButtonIdToRustButtonNumber = HashBiMap.create();
         convPressedAndroidButtonIdToRustButtonNumber = HashBiMap.create();
 
+        calculatedButtonIds = new HashSet();
+
         //Toggle buttons
 
         assignButtonId = R.id.but_34;
-        addButtonId = R.id.but_24;
-        convButtonId = R.id.but_94;
+        addButtonId = R.id.but_30;
+        convButtonId = R.id.but_44;
+        helpButtonId = R.id.but_90;
 
 
         //Buttons without modifiers
-        androidButtonIdToRustButtonNumber.put(R.id.but_00, COURSE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_00, HEADING_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_01, HEAD_WIND_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_02, CROSS_WIND_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_03, WIND_HEADING_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_04, WIND_SPEED_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_10, INDICATED_AIRSPEED_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_11, ALTITUDE_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_12, ALTIMETER_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_13, TEMP_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_14, DEW_POINT_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_03, PRESSURE_ALTITUDE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_04, DENSITY_ALTITUDE_BUTTON);
 
-        androidButtonIdToRustButtonNumber.put(R.id.but_20, HEADING_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_21, A_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_22, B_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_23, C_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_10, GROUND_SPEED_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_11, WIND_SPEED_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_12, WIND_HEADING_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_13, ALTITUDE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_14, ALTIMETER_BUTTON);
 
-        androidButtonIdToRustButtonNumber.put(R.id.but_30, PRESSURE_ALTITUDE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_20, TRUE_AIRSPEED_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_21, CALIBRATED_AIRSPEED_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_22, COURSE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_23, TEMP_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_24, DEW_POINT_BUTTON);
+
         androidButtonIdToRustButtonNumber.put(R.id.but_31, ARCSIN_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_32, ARCCOS_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_33, ARCTAN_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_40, DENSITY_ALTITUDE_BUTTON);
+
+        androidButtonIdToRustButtonNumber.put(R.id.but_40, A_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_41, SIN_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_42, COS_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_43, TAN_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_44, DIVIDE_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_50, TRUE_AIRSPEED_BUTTON);
+
+        androidButtonIdToRustButtonNumber.put(R.id.but_50, B_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_51, SEVEN_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_52, EIGHT_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_53, NINE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_54, MULTIPLY_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_60, GROUND_SPEED_BUTTON);
+
+        androidButtonIdToRustButtonNumber.put(R.id.but_60, C_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_61, FOUR_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_62, FIVE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_63, SIX_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_64, MINUS_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_64, DIVIDE_BUTTON);
 
-        androidButtonIdToRustButtonNumber.put(R.id.but_70, CLEAR_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_70, D_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_71, ONE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_72, TWO_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_73, THREE_BUTTON);
         androidButtonIdToRustButtonNumber.put(R.id.but_74, PLUS_BUTTON);
 
-        androidButtonIdToRustButtonNumber.put(R.id.but_81, ZERO_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_82, PERIOD_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_83, ANS_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_84, EQUALS_BUTTON);
 
-        androidButtonIdToRustButtonNumber.put(R.id.but_91, LEFT_PARENTH_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_92, RIGHT_PARENTH_BUTTON);
-        androidButtonIdToRustButtonNumber.put(R.id.but_93, BACKSPACE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_80, CLEAR_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_81, PERIOD_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_82, ZERO_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_83, EQUALS_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_84, MINUS_BUTTON);
+
+        androidButtonIdToRustButtonNumber.put(R.id.but_91, BACKSPACE_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_92, LEFT_PARENTH_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_93, RIGHT_PARENTH_BUTTON);
+        androidButtonIdToRustButtonNumber.put(R.id.but_94, ANS_BUTTON);
 
         //Buttons with assignment modifier
 
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_03, WIND_HEADING_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_04, WIND_SPEED_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_10, INDICATED_AIRSPEED_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_11, ALTITUDE_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_12, ALTIMETER_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_13, TEMP_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_14, DEW_POINT_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_20, HEADING_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_21, A_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_22, B_ASSIGN_BUTTON);
-        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_23, C_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_11, WIND_SPEED_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_12, WIND_HEADING_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_13, ALTITUDE_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_14, ALTIMETER_ASSIGN_BUTTON);
+
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_21, CALIBRATED_AIRSPEED_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_22, COURSE_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_23, TEMP_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_24, DEW_POINT_ASSIGN_BUTTON);
+
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_40, A_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_50, B_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_60, C_ASSIGN_BUTTON);
+        assignPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_70, D_ASSIGN_BUTTON);
 
 
         //Buttons with add modifier
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_03, WIND_HEADING_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_04, WIND_SPEED_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_10, INDICATED_AIRSPEED_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_11, ALTITUDE_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_12, ALTIMETER_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_13, TEMP_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_14, DEW_POINT_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_20, HEADING_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_21, A_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_22, B_ADD_BUTTON);
-        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_23, C_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_11, WIND_SPEED_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_12, WIND_HEADING_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_13, ALTITUDE_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_14, ALTIMETER_ADD_BUTTON);
+
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_21, CALIBRATED_AIRSPEED_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_22, COURSE_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_23, TEMP_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_24, DEW_POINT_ADD_BUTTON);
+
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_40, A_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_50, B_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_60, C_ADD_BUTTON);
+        addPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_70, D_ADD_BUTTON);
+
         //Buttons with conversion modifier
-
-
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_31, NM_TO_FEET_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_32, FEET_TO_NM_BUTTON);
+        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_33, FEET_TO_METERS_BUTTON);
+
 
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_41, KNOTS_TO_FPM_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_42, FPM_TO_KNOTS_BUTTON);
-        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_43, KPH_TO_MPM_BUTTON);
-        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_44, MPM_TO_KPH_BUTTON);
+        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_43, METERS_TO_FEET_BUTTON);
+
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_51, NM_TO_MILES_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_52, MILES_TO_NM_BUTTON);
-        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_53, MILES_TO_KILOMETERS_BUTTON);
-        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_54, KILOMETERS_TO_MILES_BUTTON);
-        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_61, KNOTS_TO_MPH_BUTTON);
-        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_62, MPH_TO_KNOTS_BUTTON);
+        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_53, KPH_TO_MPM_BUTTON);
+        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_54, MPM_TO_KPH_BUTTON);
+
+        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_61, MILES_TO_KILOMETERS_BUTTON);
+        convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_62, KILOMETERS_TO_MILES_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_63, C_TO_F_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_64, F_TO_C_BUTTON);
+
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_71, LBS_TO_KGS_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_72, KGS_TO_LBS_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_73, LITERS_TO_GALLONS_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_74, GALLONS_TO_LITTERS_BUTTON );
+
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_81, INHG_TO_HECTOPASCALS_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_82, HECTOPASCALS_TO_INHG_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_83, GALLONS_TO_AVIGAS_LBS_BUTTON);
         convPressedAndroidButtonIdToRustButtonNumber.put(R.id.but_84, GALLONS_TO_JET_FUEL_LBS_BUTTON);
 
+
+        assignableButtonIds = assignPressedAndroidButtonIdToRustButtonNumber.keySet();
+
+
+
+        calculatedButtonIds.add(androidButtonIdToRustButtonNumber.inverse().get(PRESSURE_ALTITUDE_BUTTON));
+        calculatedButtonIds.add(androidButtonIdToRustButtonNumber.inverse().get(DENSITY_ALTITUDE_BUTTON));
+        calculatedButtonIds.add(androidButtonIdToRustButtonNumber.inverse().get(HEAD_WIND_BUTTON));
+        calculatedButtonIds.add(androidButtonIdToRustButtonNumber.inverse().get(CROSS_WIND_BUTTON));
+        calculatedButtonIds.add(androidButtonIdToRustButtonNumber.inverse().get(HEADING_BUTTON));
+        calculatedButtonIds.add(androidButtonIdToRustButtonNumber.inverse().get(TRUE_AIRSPEED_BUTTON));
+        calculatedButtonIds.add(androidButtonIdToRustButtonNumber.inverse().get(GROUND_SPEED_BUTTON));
     }
 
 
@@ -155,7 +192,7 @@ public class JniInterfacingConstants{
     public static final int WIND_SPEED_UPDATE_NUMBER= 10;
     public static final int WIND_HEADING_UPDATE_NUMBER= 11;
     public static final int HEADING_UPDATE_NUMBER= 12;
-    public static final int INDICATED_AIRSPEED_UPDATE_NUMBER= 13;
+    public static final int CALIBRATED_AIRSPEED_UPDATE_NUMBER= 13;
     public static final int PRESSURE_ALTITUDE_UPDATE_NUMBER= 14;
     public static final int DENSITY_ALTITUDE_UPDATE_NUMBER= 15;
     public static final int HEAD_WIND_UPDATE_NUMBER= 16;
@@ -202,14 +239,14 @@ public class JniInterfacingConstants{
     public static final int ALTIMETER_BUTTON= 53;
     public static final int WIND_SPEED_BUTTON= 54;
     public static final int WIND_HEADING_BUTTON= 55;
-    public static final int HEADING_BUTTON= 56;
-    public static final int INDICATED_AIRSPEED_BUTTON= 57;
+    public static final int COURSE_BUTTON= 56;
+    public static final int CALIBRATED_AIRSPEED_BUTTON= 57;
     public static final int DEW_POINT_BUTTON = 58;
     public static final int PRESSURE_ALTITUDE_BUTTON= 61;
     public static final int DENSITY_ALTITUDE_BUTTON= 62;
     public static final int HEAD_WIND_BUTTON= 63;
     public static final int CROSS_WIND_BUTTON= 64;
-    public static final int COURSE_BUTTON= 65;
+    public static final int HEADING_BUTTON= 65;
     public static final int TRUE_AIRSPEED_BUTTON= 66;
     public static final int GROUND_SPEED_BUTTON= 67;
     public static final int A_ASSIGN_BUTTON= 101;
@@ -221,8 +258,8 @@ public class JniInterfacingConstants{
     public static final int ALTIMETER_ASSIGN_BUTTON= 113;
     public static final int WIND_SPEED_ASSIGN_BUTTON= 114;
     public static final int WIND_HEADING_ASSIGN_BUTTON= 115;
-    public static final int HEADING_ASSIGN_BUTTON= 116;
-    public static final int INDICATED_AIRSPEED_ASSIGN_BUTTON= 117;
+    public static final int COURSE_ASSIGN_BUTTON= 116;
+    public static final int CALIBRATED_AIRSPEED_ASSIGN_BUTTON= 117;
     public static final int DEW_POINT_ASSIGN_BUTTON = 118;
     public static final int A_ADD_BUTTON= 201;
     public static final int B_ADD_BUTTON= 202;
@@ -233,8 +270,8 @@ public class JniInterfacingConstants{
     public static final int ALTIMETER_ADD_BUTTON= 213;
     public static final int WIND_SPEED_ADD_BUTTON= 214;
     public static final int WIND_HEADING_ADD_BUTTON= 215;
-    public static final int HEADING_ADD_BUTTON= 216;
-    public static final int INDICATED_AIRSPEED_ADD_BUTTON= 217;
+    public static final int COURSE_ADD_BUTTON= 216;
+    public static final int CALIBRATED_AIRSPEED_ADD_BUTTON= 217;
     public static final int DEW_POINT_ADD_BUTTON = 218;
     public static final int NM_TO_FEET_BUTTON= 301;
     public static final int FEET_TO_NM_BUTTON= 302;
@@ -258,6 +295,10 @@ public class JniInterfacingConstants{
     public static final int GALLONS_TO_JET_FUEL_LBS_BUTTON= 320;
     public static final int INHG_TO_HECTOPASCALS_BUTTON= 321;
     public static final int HECTOPASCALS_TO_INHG_BUTTON= 322;
+    public static final int FEET_TO_METERS_BUTTON= 323;
+    public static final int METERS_TO_FEET_BUTTON= 324;
+
+
 }
 
 
