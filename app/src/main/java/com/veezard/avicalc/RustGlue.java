@@ -12,6 +12,7 @@ public class RustGlue {
 
     private static MainActivity mainActivity;
 
+
     public static native void respondToButtonRust(int button_number);
     private static native void initializeRust();
 
@@ -21,7 +22,8 @@ public class RustGlue {
     }
 
 
-    public static void update_field(int field, String val){
+    
+    public static void update_field(int field, String val){ // Updates values of variables on the calculator. Rust backend library uses this functions when a variable gets updated.
         TextView textView;
         Button buttonView;
         int buttonId;

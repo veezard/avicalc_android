@@ -22,7 +22,7 @@ public class GuiHelpers {
 
 
 
-    public static void colorButtons(MainActivity mainActivity){
+    public static void colorButtons(MainActivity mainActivity){ // Change background of buttons depending on their function
         for (int buttonId : assignableButtonIds){
             View button = mainActivity.findViewById(buttonId);
             button.setBackgroundResource(R.drawable.button_assignable_variable);
@@ -39,6 +39,7 @@ public class GuiHelpers {
 
 
     public static void initialize() {
+//Initializes conversionLabels which hold the strings labels of buttons corresponding to unit conversions. This is redundant (same labels are in xml), but I needed these strings programatically and it's a paint getting them from xml.
         conversionLabels = new HashMap();
 
         conversionLabels.put(NM_TO_FEET_BUTTON, "nm -> ft");

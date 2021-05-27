@@ -1,6 +1,9 @@
 extern crate float_pretty_print;
 use float_pretty_print::PrettyPrintFloat;
 
+//These constants interface with java code. When a variable gets updated (e.g temperature), the
+//java function receive the updated value along with the value specifying which variable has been
+//updated (7 if the variable is temperature).
 const ENTRY_FIELD_UPDATE_NUMBER: i32 = 0;
 const PREVIOUS_ENTRY_FIELD_UPDATE_NUMBER: i32 = 1;
 const ANS_UPDATE_NUMBER: i32 = 2;
@@ -57,6 +60,11 @@ pub mod android {
     use avicalc_backend::objects::*;
     use avicalc_backend::*;
 
+    // This object is necessary to interface with java. The problem is it gets initialized when
+    // java calls a native function and gets removed when the native function exits. Since I need
+    // to have callback functions in Rust, I need a VM Envirenment variable which those callback functions can use.
+    // So, any function called by java, first sets VM_ENV, so that all callback function can
+    // function properly.
     pub static mut VM_ENV: Option<RefCell<Box<JNIEnv>>> = None;
 
     use super::*;
@@ -65,7 +73,11 @@ pub mod android {
         env: JNIEnv<'static>,
         _: JClass,
     ) -> () {
+        //Set JAVA VM environment.
         VM_ENV = Some(RefCell::new(Box::new(env)));
+        // Rust backend has a global static STATE variable which incorporates callback functions
+        // which get called when a variable gets updated. This function is a helper function for
+        // creating these callback functions which need to interact with Java VM.
         fn update_callback_function_wrapper(
             java_side_update_number: i32,
         ) -> Rc<RefCell<Box<dyn FnMut(f64) -> ()>>> {
@@ -74,6 +86,8 @@ pub mod android {
                 let entry: String = float_to_pretty_string(val);
                 if let Ok(rust_glue_class) = global_env.find_class("com/veezard/avicalc/RustGlue") {
                     if let Ok(entry_as_jstring) = global_env.new_string(entry) {
+                        // Calls java static method update_field of the RustGlue class with
+                        // arguments java_side_update_number, entry
                         global_env.call_static_method(
                             rust_glue_class,
                             "update_field",
@@ -87,6 +101,8 @@ pub mod android {
                 }
             })))
         }
+        // Creates a mapping from rust backend variables to java callback functions which update
+        // gui. This mapping is needed to create global state of rust backend library.
         fn gui_update_functions(var: Variable) -> Rc<RefCell<Box<dyn FnMut(f64) -> ()>>> {
             match var {
                 Variable::Ans => update_callback_function_wrapper(ANS_UPDATE_NUMBER),

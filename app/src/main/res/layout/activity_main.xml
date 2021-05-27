@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -13,7 +14,6 @@
         android:padding="0dp">
 
         <LinearLayout
-            android:id="@+id/main_container_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -37,7 +37,7 @@
 
                         <FrameLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            style="@style/TopEntryFieldStyle"
                             android:layout_weight="1"
                             >
 
@@ -49,11 +49,12 @@
                                     <TextView
                                         android:id="@+id/entry_field"
                                         android:layout_width="wrap_content"
+                                        style="@style/TopEntryFieldStyle"
                                         android:layout_height="match_parent"
                                         android:layout_gravity="end"
                                         android:text="1+2*28+cos11"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                                        android:textSize="28dp" />
+                                        />
 
                             </FrameLayout>
 
@@ -67,13 +68,12 @@
 
                         <TextView
                             android:id="@+id/answer_field"
+                            style="@style/TopEntryFieldStyle"
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
                             android:layout_weight="3"
                             android:text="143.4365"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                            android:textSize="28dp" />
-
+                        />
                     </LinearLayout>
 
                     <View
@@ -89,11 +89,11 @@
                         <TextView
                             android:id="@+id/prev_entry_field"
                             android:layout_width="match_parent"
-                            android:layout_height="20dp"
                             android:layout_weight="1"
                             android:text="1+2*28+cos11"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                            android:textSize="14dp" />
+                            style="@style/BottomEntryFieldStyle"
+                            />
 
                         <View
                             android:layout_width="1dp"
@@ -103,12 +103,12 @@
                         <TextView
                             android:id="@+id/last_conv_operation"
                             android:layout_width="match_parent"
-                            android:layout_height="20dp"
                             android:layout_weight="3"
                             android:text="mpm -> kph"
                             android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="@color/label_on_light"
-                            android:textSize="14dp" />
+                            style="@style/BottomEntryFieldStyle"
+                            />
 
                     </LinearLayout>
 
@@ -705,17 +705,18 @@
 
             <TextView
                 android:id="@+id/help_title"
+                style="@style/HelpTitleStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
                 android:text="Help Title"
                 android:textColor="@color/help_window_title"
-                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/help_body"
+                style="@style/HelpBodyStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -727,11 +728,11 @@
                 android:layout_weight="1"
                 android:scrollbars="vertical"
                 android:text="Help body"
-                android:textColor="@color/help_window_text"
-                android:textSize="15dp" />
+                android:textColor="@color/help_window_text" />
 
             <Button
                 android:id="@+id/help_close_button"
+                style="@style/CloseButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -742,6 +743,7 @@
                 android:background="@drawable/button_help_close"
                 android:fadeScrollbars="false"
                 android:text="Close" />
+
         </LinearLayout>
 
     </FrameLayout>

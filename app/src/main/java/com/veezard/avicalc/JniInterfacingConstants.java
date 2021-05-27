@@ -16,6 +16,7 @@ public class JniInterfacingConstants{
     public static Set<Integer> assignableButtonIds;
     public static Set<Integer> calculatedButtonIds;
 
+    // These are android button ids
     public static int assignButtonId;
     public static int addButtonId;
     public static int convButtonId;
@@ -177,7 +178,7 @@ public class JniInterfacingConstants{
     }
 
 
-    // These constants must be the same as in the main rust library file
+    // These constants must be the same as in the android rust library file
 
     public static final int ENTRY_FIELD_UPDATE_NUMBER=0;
     public static final int PREVIOUS_ENTRY_FIELD_UPDATE_NUMBER=1;
@@ -202,7 +203,7 @@ public class JniInterfacingConstants{
     public static final int GROUND_SPEED_UPDATE_NUMBER= 20;
     public static final int DEWPOINT_UPDATE_NUMBER= 21;
 
-    // These constants must be the same as constants in the const module of the rust library
+    // These constants must be the same as constants in the const module of the backend rust library
     public static final int EQUALS_BUTTON= 1000;
     public static final int BACKSPACE_BUTTON= 1001;
     public static final int CLEAR_BUTTON= 1002;

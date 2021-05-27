@@ -42,6 +42,7 @@ CLASSPATH	gradlew.bat	/^set CLASSPATH=%APP_HOME%\\gradle\\wrapper\\gradle-wrappe
 CLEAR_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int CLEAR_BUTTON= 1002;$/;"	f	class:JniInterfacingConstants
 CMD_LINE_ARGS	gradlew.bat	/^set CMD_LINE_ARGS=$/;"	v
 CMD_LINE_ARGS	gradlew.bat	/^set CMD_LINE_ARGS=%*$/;"	v
+CONTACT	app/src/main/java/com/veezard/avicalc/Help.java	/^    static final String CONTACT =$/;"	f	class:Help
 CONVERSION	app/src/main/java/com/veezard/avicalc/Help.java	/^    static final String CONVERSION = "\\uD835\\uDDD6\\uD835\\uDDFC\\uD835\\uDDFB\\uD835\\uDE03\\uD835\\uDDF2\\uD835\\uDDFF\\uD835\\uDE00\\uD835\\uDDF6\\uD835\\uDDFC\\uD835\\uDDFB: ";$/;"	f	class:Help
 COS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int COS_BUTTON= 22;$/;"	f	class:JniInterfacingConstants
 COURSE_ADD_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int COURSE_ADD_BUTTON= 216;$/;"	f	class:JniInterfacingConstants
@@ -76,6 +77,7 @@ ENTRY_FIELD_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingCo
 EQUALS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int EQUALS_BUTTON= 1000;$/;"	f	class:JniInterfacingConstants
 ExampleInstrumentedTest	app/src/androidTest/java/com/veezard/avicalc/ExampleInstrumentedTest.java	/^public class ExampleInstrumentedTest {$/;"	c
 ExampleUnitTest	app/src/test/java/com/veezard/avicalc/ExampleUnitTest.java	/^public class ExampleUnitTest {$/;"	c
+FEATURES	app/src/main/java/com/veezard/avicalc/Help.java	/^    static final String FEATURES = "\\uD835\\uDC05\\uD835\\uDC1E\\uD835\\uDC1A\\uD835\\uDC2D\\uD835\\uDC2E\\uD835\\uDC2B\\uD835\\uDC1E\\uD835\\uDC2C";$/;"	f	class:Help
 FEET_TO_METERS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int FEET_TO_METERS_BUTTON= 323;$/;"	f	class:JniInterfacingConstants
 FEET_TO_NM_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int FEET_TO_NM_BUTTON= 302;$/;"	f	class:JniInterfacingConstants
 FIVE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int FIVE_BUTTON= 5;$/;"	f	class:JniInterfacingConstants
@@ -93,10 +95,11 @@ HEADING_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConsta
 HEAD_WIND_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEAD_WIND_BUTTON= 63;$/;"	f	class:JniInterfacingConstants
 HEAD_WIND_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HEAD_WIND_UPDATE_NUMBER= 16;$/;"	f	class:JniInterfacingConstants
 HECTOPASCALS_TO_INHG_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int HECTOPASCALS_TO_INHG_BUTTON= 322;$/;"	f	class:JniInterfacingConstants
-Help	app/src/main/java/com/veezard/avicalc/Help.java	/^public class Help {$/;"	c
+Help	app/src/main/java/com/veezard/avicalc/Help.java	/^public class Help { \/\/Text of help window is hard-coded here$/;"	c
 HelpText	app/src/main/java/com/veezard/avicalc/Help.java	/^        public HelpText(String title, String body){$/;"	m	class:Help.HelpText
 HelpText	app/src/main/java/com/veezard/avicalc/Help.java	/^    public static class HelpText {$/;"	c	class:Help
 INHG_TO_HECTOPASCALS_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int INHG_TO_HECTOPASCALS_BUTTON= 321;$/;"	f	class:JniInterfacingConstants
+INSTRUCTIONS	app/src/main/java/com/veezard/avicalc/Help.java	/^    static final String INSTRUCTIONS =$/;"	f	class:Help
 JAVA_EXE	gradlew.bat	/^set JAVA_EXE=%JAVA_HOME%\/bin\/java.exe$/;"	v
 JAVA_EXE	gradlew.bat	/^set JAVA_EXE=java.exe$/;"	v
 JAVA_HOME	gradlew.bat	/^set JAVA_HOME=%JAVA_HOME:"=%$/;"	v
@@ -140,6 +143,7 @@ THREE_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	
 TRUE_AIRSPEED_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TRUE_AIRSPEED_BUTTON= 66;$/;"	f	class:JniInterfacingConstants
 TRUE_AIRSPEED_UPDATE_NUMBER	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TRUE_AIRSPEED_UPDATE_NUMBER= 19;$/;"	f	class:JniInterfacingConstants
 TWO_BUTTON	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static final int TWO_BUTTON= 2;$/;"	f	class:JniInterfacingConstants
+UNITS_INSTRUCTIONS	app/src/main/java/com/veezard/avicalc/Help.java	/^    static final String UNITS_INSTRUCTIONS =$/;"	f	class:Help
 VERSION_CODE	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^  public static final int VERSION_CODE = 1;$/;"	f	class:BuildConfig
 VERSION_CODE	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^  public static final int VERSION_CODE = 1;$/;"	f	class:BuildConfig
 VERSION_NAME	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^  public static final String VERSION_NAME = "1.0";$/;"	f	class:BuildConfig
@@ -164,9 +168,11 @@ args	build/linker-wrapper/linker-wrapper.py	/^args = [os.environ['RUST_ANDROID_G
 assignButtonId	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static int assignButtonId;$/;"	f	class:JniInterfacingConstants
 assignButtonPressed	app/src/main/java/com/veezard/avicalc/MainActivity.java	/^    boolean assignButtonPressed = false;$/;"	f	class:MainActivity
 assignPressedAndroidButtonIdToRustButtonNumber	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static BiMap<Integer,Integer> assignPressedAndroidButtonIdToRustButtonNumber;$/;"	f	class:JniInterfacingConstants
+assignableButtonIds	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static Set<Integer> assignableButtonIds;$/;"	f	class:JniInterfacingConstants
 body	app/src/main/java/com/veezard/avicalc/Help.java	/^        String body = "";$/;"	f	class:Help.HelpText
 button_view_id_to_help_text	app/src/main/java/com/veezard/avicalc/Help.java	/^    static Map<Integer, HelpText> button_view_id_to_help_text = new HashMap();$/;"	f	class:Help
-colorButtons	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    public static void colorButtons(MainActivity mainActivity){$/;"	m	class:GuiHelpers
+calculatedButtonIds	app/src/main/java/com/veezard/avicalc/JniInterfacingConstants.java	/^    public static Set<Integer> calculatedButtonIds;$/;"	f	class:JniInterfacingConstants
+colorButtons	app/src/main/java/com/veezard/avicalc/GuiHelpers.java	/^    public static void colorButtons(MainActivity mainActivity){ \/\/ Change background of buttons depending on their function$/;"	m	class:GuiHelpers
 com.veezard.avicalc	app/build/generated/source/buildConfig/debug/com/veezard/avicalc/BuildConfig.java	/^package com.veezard.avicalc;$/;"	p
 com.veezard.avicalc	app/build/generated/source/buildConfig/release/com/veezard/avicalc/BuildConfig.java	/^package com.veezard.avicalc;$/;"	p
 com.veezard.avicalc	app/src/androidTest/java/com/veezard/avicalc/ExampleInstrumentedTest.java	/^package com.veezard.avicalc;$/;"	p
@@ -207,7 +213,7 @@ return_buttons_recursively	app/src/main/java/com/veezard/avicalc/MainActivity.ja
 reveal	app/build/reports/lint-results-release-fatal.html	/^function reveal(id) {$/;"	f
 save	gradlew	/^save () {$/;"	f
 title	app/src/main/java/com/veezard/avicalc/Help.java	/^        String title ="";$/;"	f	class:Help.HelpText
-update_field	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^    public static void update_field(int field, String val){$/;"	m	class:RustGlue
+update_field	app/src/main/java/com/veezard/avicalc/RustGlue.java	/^    public static void update_field(int field, String val){ \/\/ Updates values of variables on the calculator. Rust backend library uses this functions when a variable gets updated.$/;"	m	class:RustGlue
 useAppContext	app/src/androidTest/java/com/veezard/avicalc/ExampleInstrumentedTest.java	/^    public void useAppContext() {$/;"	m	class:ExampleInstrumentedTest
 warn	gradlew	/^warn () {$/;"	f
 win9xME_args	gradlew.bat	/^:win9xME_args$/;"	l

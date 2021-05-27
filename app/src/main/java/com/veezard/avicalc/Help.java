@@ -9,7 +9,7 @@ import java.util.Map;
 
 import static com.veezard.avicalc.JniInterfacingConstants.*;
 
-public class Help {
+public class Help { //Text of help window is hard-coded here
     public static class HelpText {
         String title ="";
         String body = "";

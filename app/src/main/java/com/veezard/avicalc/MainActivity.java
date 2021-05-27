@@ -28,28 +28,31 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Calculators runs ONLY in portrait mode
+        setContentView(R.layout.activity_main); 
         getSupportActionBar().hide();
         JniInterfacingConstants.initialize();
         RustGlue.initialize(this);
         GuiHelpers.initialize();
         Help.initialize(this);
+
+        // I want xml file to have text in the window displaying last conversion operation so that I can see it when editing UI. this clears it when the app starts 
         TextView last_conv_operation_display = this.findViewById(R.id.last_conv_operation);
         last_conv_operation_display.setText("");
 
+        // Add touch respond to all buttons
         View outer_layout = this.findViewById(R.id.main_container_layout);
         for(View buttonView : return_buttons_recursively(outer_layout)){
             buttonView.setOnTouchListener(MainActivity.this);
         }
 
-        this.findViewById(R.id.help_close_button).setOnTouchListener(MainActivity.this);
-
 
         GuiHelpers.colorButtons(this);
+        // Make the text in the help window scrollable. This has an added benefit that button underneath the help window are not clickable when it is open.
         ((TextView)this.findViewById(R.id.help_body)).setMovementMethod(new ScrollingMovementMethod());
 
 
+        // Show main info text when the app is ran for the first time.
         SharedPreferences settings = this.getPreferences(0);
         if (settings.getBoolean("first time running", true)){
             this.helpButtonPressed=true;
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     }
 
+    // Finds all views which are buttons. (There really should be a better way of doing this).
     private Set<View> return_buttons_recursively(View layout_view){
         Set<View> button_ids= new HashSet<View>();
         if (layout_view instanceof ViewGroup){
@@ -80,12 +84,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     @Override
     public boolean onTouch(View view, MotionEvent event) {
         if(event.getAction() == MotionEvent.ACTION_DOWN & (view instanceof Button) ){
-            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+            view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY); // Vibrate on button touch
             respondToButton(view);
         }
         return true;
     }
 
+    // State of button which have pressed state
     boolean assignButtonPressed = false;
     boolean addButtonPressed = false;
     boolean convButtonPressed = false;
@@ -96,10 +101,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         int rustButtonNumber ;
         Help.HelpText helpText;
 
+        // Close help windows
         if (viewId == R.id.help_close_button) {
             this.findViewById(R.id.help_window).setVisibility(View.INVISIBLE);
             return ;
         }
+        // Button pressed after CONV. Updates "last conversion window" and applies conversion if the pressed button corresponds to a conversion
         if (convButtonPressed){
             convButtonPressed = false;
             this.findViewById(convButtonId).setBackgroundResource(R.drawable.button_conv);
@@ -113,6 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             }
             return;
         }
+        // Button pressed after ?. Updates help text and makes help window visible.
         if (helpButtonPressed){
             helpButtonPressed=false;
             this.findViewById(helpButtonId).setBackgroundResource(R.drawable.button_help);
@@ -129,6 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             convButtonPressed = true;
             this.findViewById(convButtonId).setBackgroundResource(R.drawable.button_conv_pressed);
         }
+        
         else if (viewId == helpButtonId) {
             if(helpButtonPressed){
                 helpButtonPressed=false;
@@ -139,6 +148,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 this.findViewById(helpButtonId).setBackgroundResource(R.drawable.button_help_pressed);
             }
         }
+        // For add and assign buttons, this logic also makes sure only one of the two is ever pressed at a time. 
         else if (viewId == assignButtonId){
             if(assignButtonPressed) {
                 assignButtonPressed=false;
@@ -164,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             }
         }
 
-
+    // A button corresponding to an assignable variable is pressed so we need to check if/which assign/add button is toggled.
        else if(assignPressedAndroidButtonIdToRustButtonNumber.containsKey(viewId)){
 
            if (assignButtonPressed) {
@@ -183,6 +193,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
            RustGlue.respondToButtonRust(rustButtonNumber);
         }
 
+       // Rust backend takes care of all other logic.
        else {
             rustButtonNumber = androidButtonIdToRustButtonNumber.get(viewId);
             RustGlue.respondToButtonRust(rustButtonNumber);
