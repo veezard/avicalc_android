@@ -41,7 +41,7 @@ cargo {
         module  = "src/main/rust/android_glue"       // Or whatever directory contains your Cargo.toml
         libname = "android_glue"          // Or whatever matches Cargo.toml's [package] name.
         targets = ["arm", "x86","arm64","x86_64"]  
-        apiLevel = 26
+        apiLevel = 21
         profile = 'release'
 }
 

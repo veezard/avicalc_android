@@ -63,7 +63,7 @@ public class Help { //Text of help window is hard-coded here
                         + "\u25CF To assign a value to a variable, first press the \":=\" button. "
                         + "When \":=\" is pressed, pressing a green button will evaluate the entry field and assign the result to the corresponding variable. "
                         + "If the entry field is empty, the value in the answer field will be assigned instead.\n "
-                        + "\u25CF To add a value to a variable, have \":+\" button pressed. \n"
+                        + "\u25CF To add a value to a variable, have \"+=\" button pressed. \n"
                         + "\u25CF "+ UNITS_INSTRUCTIONS + " (for angles)\n"
                         + "\u25CF Press \"CONV\" button for unit conversion.\n"
                         + "\u25CF General purpose variables a,b,c,d are convenient when computing weight, moment, and center of mass. \n"
